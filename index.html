@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div class="scrolling-background"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-3">
+        <div class="container-fluid px-5">
+            <a class="navbar-brand" href="#">
+                <img src="images/discord-logo.svg" alt="Discord Logo" width="90">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center gap-4">
+
+                    <li class="nav-item"><a class="nav-link" href="#">Download</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Nitro</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Discover</a></li>
+
+                    <!-- Safety Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Safety</a>
+                        <ul class="dropdown-menu p-3">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6>Resources</h6>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Family Center</a></li>
+                                        <li><a href="#">Safety Library</a></li>
+                                        <li><a href="#">Safety News</a></li>
+                                        <li><a href="#">Teen Charter</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6>Hubs</h6>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Parent Hub</a></li>
+                                        <li><a href="#">Policy Hub</a></li>
+                                        <li><a href="#">Privacy Hub</a></li>
+                                        <li><a href="#">Transparency Hub</a></li>
+                                        <li><a href="#">Wellbeing Hub</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <!-- Quests Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Quests</a>
+                        <ul class="dropdown-menu p-3 position-relative">
+                            <h6>Resources</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Advertising</a></li>
+                                <li><a href="#">Success Stories</a></li>
+                                <li><a href="#">Quests FAQ</a></li>
+                            </ul>
+                            <img src="images/quests-popup.webp" class="popup-img" alt="Quests Image">
+                        </ul>
+                    </li>
+
+                    <!-- Support Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Support</a>
+                        <ul class="dropdown-menu p-3 position-relative">
+                            <h6>Resources</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Help Center</a></li>
+                                <li><a href="#">Feedback</a></li>
+                                <li><a href="#">Submit a Request</a></li>
+                            </ul>
+                            <img src="images/support-popup.webp" class="popup-img" alt="Support Image">
+                        </ul>
+                    </li>
+
+                    <!-- Blog Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                        <ul class="dropdown-menu p-3 position-relative">
+                            <h6>Collections</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Featured</a></li>
+                                <li><a href="#">Community</a></li>
+                                <li><a href="#">Discord HQ</a></li>
+                                <li><a href="#">Engineering & Developers</a></li>
+                                <li><a href="#">How to Discord</a></li>
+                                <li><a href="#">Policy & Safety</a></li>
+                                <li><a href="#">Product & Features</a></li>
+                            </ul>
+                            <img src="images/blog-popup.webp" class="popup-img" alt="Blog Image">
+                        </ul>
+                    </li>
+
+                    <!-- Developers Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Developers</a>
+                        <ul class="dropdown-menu p-3 position-relative">
+                            <h6>Featured</h6>
+                            <ul class="list-unstyled mb-3">
+                                <li><a href="#">Discord Social SDK</a></li>
+                                <li><a href="#">Apps and Activities</a></li>
+                            </ul>
+                            <hr>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Documentation</a></li>
+                                <li><a href="#">Developer Home</a></li>
+                                <li><a href="#">Developer Documentation</a></li>
+                                <li><a href="#">Developer Applications</a></li>
+                                <li><a href="#">Developer Help Center</a></li>
+                            </ul>
+                            <img src="images/developers-popup.webp" class="popup-img" alt="Developers Image">
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
+<li class="nav-item">
+    <button class="login-button fixed-login">Log In</button>
+</li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section section-spacing">
+        <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between px-5">
+
+            <!-- Hero Text -->
+            <div class="hero-text text-white mb-4 mb-lg-0 text-center text-lg-start">
+                <h1 class="display-4 fw-bold mb-3">GROUP CHAT THAT'S ALL FUN & GAMES</h1>
+                <p class="lead">Discord is great for playing games and chilling with friends, or even building a worldwide community. Customize your own space to talk, play, and hang out.</p>
+            </div>
+
+            <!-- Hero Image -->
+            <div class="hero-image">
+                <img src="images/hero-section.jpg" alt="Discord Hero" class="img-fluid">
+            </div>
+
+        </div>
+        <div class="cta-buttons">
+            <button class="download-btn">Download for Windows <i class="bi bi-download"></i></button>
+            <button class="browser-btn">Open Discord in Your Browser</button>
+        </div>
+    </header>
+
+    <!-- Second Section -->
+    <section class="section-spacing">
+      <div class="second-box p-4 rounded-5" style="background-color: #5950a9;">
+            <div class="container d-flex flex-lg-row flex-column align-items-center justify-content-between">
+                <!-- Video Box -->
+                <div class="video-container mb-4 mb-lg-0">
+                    <video src="videos/discord-chat.mp4" autoplay muted loop playsinline class="video-content rounded-4"></video>
+                </div>
+
+                <!-- Text Box -->
+                <div class="text-container text-white ms-lg-4">
+                    <h2 class="fw-bold mb-4">Stream Like You're in the Same Room</h2>
+                    <p>Watch your friends' streams live while you chat and share reactions in real-time. Discord makes it easy to stay connected while having fun together.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Third Section -->
+    <section class="section-spacing">
+      <div class="third-box p-4 rounded-5" style="background-color: #5950a9;">
+            <div class="container d-flex flex-lg-row flex-column align-items-center justify-content-between">
+
+                <!-- Text Box -->
+                <div class="text-container text-white mb-4 mb-lg-0 me-lg-4">
+                    <h2 class="fw-bold mb-4">Stream Like You’re in the Same Room</h2>
+                    <p>High quality and low latency streaming makes it feel like you're hanging out on the couch with friends while playing a game, watching shows, looking at photos, or idk doing homework or something.</p>
+                </div>
+
+                <!-- Video Box -->
+                <div class="video-container">
+                    <video src="videos/stream.mp4" autoplay muted loop playsinline class="video-content rounded-4"></video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fourth Section -->
+    <section class="section-spacing">
+           <div class="fourth-box p-4 rounded-5" style="background-color: #5950a9;">
+            <div class="container d-flex flex-lg-row flex-column align-items-center justify-content-between">
+
+                <!-- Video Box -->
+                <div class="video-container mb-4 mb-lg-0">
+                    <video src="videos/hop-in.mp4" autoplay muted loop playsinline class="video-content rounded-4"></video>
+                </div>
+
+                <!-- Text Box -->
+                <div class="text-container text-white ms-lg-4">
+                    <h2 class="fw-bold mb-4">Hop in when you're free, no need to call</h2>
+                    <p>Easily hop in and out of voice or text chats without having to call or invite anyone, so your party chat lasts before, during, and after your game session.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Moving Line Section -->
+   
+<section class="moving-line-section overflow-hidden my-5">
+    <div class="moving-line d-flex align-items-center">
+        <div class="moving-content d-flex align-items-center">
+            <!-- Repeating Items for Smooth Scrolling -->
+            <span class="moving-item fw-bold text-white mx-5 display-5">
+                PLAY <img src="images/discord-log.png" alt="Discord" class="moving-logo ms-3">
+            </span>
+            <span class="moving-item fw-bold text-white mx-5 display-5">
+                CHAT <img src="images/discord-log.png" alt="Discord" class="moving-logo ms-3">
+            </span>
+            <span class="moving-item fw-bold text-white mx-5 display-5">
+                HANGOUT <img src="images/discord-log.png" alt="Discord" class="moving-logo ms-3">
+            </span>
+            <span class="moving-item fw-bold text-white mx-5 display-5">
+                TALK <img src="images/discord-log.png" alt="Discord" class="moving-logo ms-3">
+            </span>
+
+            <!-- Repeat for Seamless Loop -->
+            <span class="moving-item fw-bold text-white mx-5 display-5">
+                PLAY <img src="images/discord-log.png" alt="Discord" class="moving-logo ms-3">
+            </span>
+            <span class="moving-item fw-bold text-white mx-5 display-5">
+                CHAT <img src="images/discord-log.png" alt="Discord" class="moving-logo ms-3">
+            </span>
+            <span class="moving-item fw-bold text-white mx-5 display-5">
+                HANGOUT <img src="images/discord-log.png" alt="Discord" class="moving-logo ms-3">
+            </span>
+            <span class="moving-item fw-bold text-white mx-5 display-5">
+                TALK <img src="images/discord-log.png" alt="Discord" class="moving-logo ms-3">
+            </span>
+        </div>
+    </div>
+</section>
+<!-- Fifth Section -->
+<section class="section-spacing">
+    <div class="fifth-box p-4 rounded-5" style="background: linear-gradient(to right, #6654d7, #5950a9);">
+        <div class="container d-flex flex-lg-row flex-column align-items-center justify-content-between">
+
+            <!-- Text Box -->
+            <div class="text-container text-white mb-4 mb-lg-0 me-lg-4">
+                <h2 class="fw-bold mb-4">See who's around to chill</h2>
+                <p>See who's around, playing games, or just hanging out. For supported games, you can see what modes or characters your friends are playing and directly join up.</p>
+            </div>
+
+            <!-- Video Box -->
+            <div class="video-container p-3 rounded-5" style="background-color: #6a5acd;">
+                <video src="videos/chill.mp4" autoplay muted loop playsinline class="video-content rounded-5"></video>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Sixth Section -->
+<section class="section-spacing">
+    <div class="sixth-box p-4 rounded-5" style="background-color: #5950a9;">
+        <div class="container d-flex flex-lg-row flex-column align-items-center justify-content-between">
+
+            <!-- Video Box -->
+            <div class="video-container mb-4 mb-lg-0 p-3 rounded-5" style="background-color: #7ed957;">
+                <video src="videos/activity.mp4" autoplay muted loop playsinline class="video-content rounded-5"></video>
+            </div>
+
+            <!-- Text Box -->
+            <div class="text-container text-white ms-lg-4">
+                <h2 class="fw-bold mb-4">Always Have Something to Do Together</h2>
+                <p>Watch videos, play built-in games, listen to music, or just scroll together and spam memes. Seamlessly text, call, video chat, and play games, all in one group chat.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Seventh Section -->
+<section class="section-spacing">
+    <div class="seventh-box p-4 rounded-5" style="background: linear-gradient(to right, #174fb1, #2016d6);">
+        <div class="container d-flex flex-lg-row flex-column align-items-center justify-content-between">
+
+            <!-- Text Box -->
+            <div class="text-container text-white mb-4 mb-lg-0 me-lg-4">
+                <h2 class="fw-bold mb-4">Wherever You Game, Hang Out Here</h2>
+                <p>On your PC, phone, or console, you can still hang out on Discord. Easily switch between devices and use tools to manage multiple group chats with friends.</p>
+            </div>
+
+            <!-- Video Box -->
+            <div class="video-container p-3 rounded-5" style="background-color: #180881;">
+                <video src="videos/refresh.mp4" autoplay muted loop playsinline class="video-content rounded-5"></video>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Final Section -->
+<section class="section-spacing text-center final-section">
+
+    
+    <h2 class="fw-bold mb-5" style="font-family: 'Abcgintodiscordnord', sans-serif; font-weight: 700; font-size: 3rem;">
+        YOU CAN'T SCROLL ANYMORE.<br>BETTER GO CHAT.
+    </h2>
+
+    <button class="btn btn-light btn-lg fw-bold px-5 py-3">Download for Windows</button>
+</section>
+
+<section>
+    <img src="images/Footer-panel.webp" alt="Footer Image" class="footer-image">
+</section>
+ <footer class="footer-main py-5 mt-3">
+    <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-start">
+
+        <!-- Left Side -->
+        <div class="footer-left mb-4 mb-lg-0">
+            <!-- Discord Logo -->
+            <img src="images/discord-logo.svg" alt="Discord Logo" width="100" class="mb-4">
+
+            <!-- Languages Heading -->
+            <h5 class="text-white mb-3">Languages</h5>
+
+            <!-- Language Selector -->
+            <div class="dropdown mb-4">
+                <button class="btn btn-light dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    English
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                    <li><a class="dropdown-item" href="#">Čeština</a></li>
+                    <li><a class="dropdown-item" href="#">Dansk</a></li>
+                    <li><a class="dropdown-item" href="#">Deutsch</a></li>
+                    <li><a class="dropdown-item active" href="#">English</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right Side Footer Links -->
+        <div class="footer-right d-flex flex-wrap gap-5">
+            <!-- Product -->
+            <div>
+                <h6 class="text-white mb-3">Product</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="footer-link">Download</a></li>
+                    <li><a href="#" class="footer-link">Nitro</a></li>
+                    <li><a href="#" class="footer-link">Status</a></li>
+                    <li><a href="#" class="footer-link">App Directory</a></li>
+                </ul>
+            </div>
+
+            <!-- Company -->
+            <div>
+                <h6 class="text-white mb-3">Company</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="footer-link">About</a></li>
+                    <li><a href="#" class="footer-link">Jobs</a></li>
+                    <li><a href="#" class="footer-link">Brand</a></li>
+                    <li><a href="#" class="footer-link">Newsroom</a></li>
+                </ul>
+            </div>
+
+            <!-- Resources -->
+            <div>
+                <h6 class="text-white mb-3">Resources</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="footer-link">College</a></li>
+                    <li><a href="#" class="footer-link">Support</a></li>
+                    <li><a href="#" class="footer-link">Safety</a></li>
+                    <li><a href="#" class="footer-link">Blog</a></li>
+                    <li><a href="#" class="footer-link">StreamKit</a></li>
+                    <li><a href="#" class="footer-link">Creators</a></li>
+                    <li><a href="#" class="footer-link">Community</a></li>
+                    <li><a href="#" class="footer-link">Developers</a></li>
+                    <li><a href="#" class="footer-link">Quests</a></li>
+                    <li><a href="#" class="footer-link">Official 3rd Party Merch</a></li>
+                    <li><a href="#" class="footer-link">Feedback</a></li>
+                </ul>
+            </div>
+
+            <!-- Policies -->
+            <div>
+                <h6 class="text-white mb-3">Policies</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="footer-link">Terms</a></li>
+                    <li><a href="#" class="footer-link">Privacy</a></li>
+                    <li><a href="#" class="footer-link">Cookie Settings</a></li>
+                    <li><a href="#" class="footer-link">Guidelines</a></li>
+                    <li><a href="#" class="footer-link">Acknowledgements</a></li>
+                    <li><a href="#" class="footer-link">Licenses</a></li>
+                    <li><a href="#" class="footer-link">Company Information</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<div class="container text-center mt-5">
+    <img src="images/foot.svg" alt="Discord Footer" class="footer-image">
+</div>
+
+
+</footer>
+
+
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,318 @@
+/* Gradient Background */
+body {
+    background: linear-gradient(135deg, #0f0f5c, #1a1a80, #000000);
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Moving Gradient Animation */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Navbar Styling */
+.navbar {
+    background: transparent;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #dcdcdc;
+}
+
+/* Hero Section Styling */
+.hero-section {
+    padding-top: 60px;
+    min-height: 600px;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+}
+
+.hero-image img {
+    max-width: 120%;
+    height: auto;
+    border: 3px solid white;
+    border-radius: 15px;
+}
+/* Adjust the size of the dropdown menu */
+.dropdown-menu {
+    width: 250px;  /* Control width */
+    max-height: 300px;  /* Optional: control height if too long */
+    overflow-y: auto;   /* Scroll if content is too much */
+    padding: 15px;
+    font-size: 0.9rem;  /* Smaller text */
+}
+
+/* Adjust popup image size */
+.popup-img {
+    width: 100%;
+    max-width: 200px;  /* Smaller image */
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.fixed-login {
+    position: fixed;
+    top: 20px;   /* distance from top */
+    right: 40px; /* distance from right */
+    z-index: 1050; /* keep it above other elements */
+}
+.login-button {
+    background-color: #007bff; /* Bootstrap blue */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.login-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+
+/* CTA Buttons Styling */
+.cta-buttons {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.download-btn,
+.browser-btn {
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+}
+
+.download-btn {
+    background-color: white;
+    color: black;
+}
+
+.download-btn:hover {
+    background-color: #ddd;
+}
+
+.browser-btn {
+    background-color: #4e1dbb;
+    color: white;
+}
+
+.browser-btn:hover {
+    background-color: #794bdf;
+}
+
+/* Box Shared Styling for All Sections */
+.second-box,
+.third-box,
+.fourth-box,
+.fifth-box {
+    background-color: #5950a9;
+    border-radius: 40px;
+    padding: 4rem;
+    min-height: 550px;
+}
+
+.video-container {
+    background-color: #6a5acd; /* Video Box Background */
+    padding: 1.5rem;
+    border-radius: 30px;
+    flex: 1;
+}
+
+.video-content {
+    border-radius: 30px;
+    width: 100%;
+    max-height: 700px;
+    object-fit: cover;
+}
+
+.text-container {
+    flex: 1;
+}
+
+/* Text Size for Boxes */
+.second-box h2,
+.third-box h2,
+.fourth-box h2,
+.fifth-box h2 {
+    font-size: 2.7rem;
+}
+
+.second-box p,
+.third-box p,
+.fourth-box p,
+.fifth-box p {
+    font-size: 1.6rem;
+}
+
+/* Moving Line Section */
+.moving-line-section {
+    background: linear-gradient(to right, #4d4da9, #344ab8);
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 1rem 0;
+}
+
+.moving-line {
+    display: inline-block;
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.moving-item {
+    font-size: 3rem;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.moving-item img {
+    width: 60px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text p {
+        font-size: 1.2rem;
+    }
+
+    .moving-item {
+        font-size: 2rem;
+    }
+
+    .moving-item img {
+        width: 40px;
+    }
+}
+/* Sixth Section Styling */
+.sixth-box {
+    background: linear-gradient(to right, #0b0521, #2b3aae); 
+    border-radius: 40px;
+    padding: 4rem;
+    min-height: 550px;
+}
+
+.sixth-box h2 {
+    font-size: 2.7rem;
+}
+
+.sixth-box p {
+    font-size: 1.6rem;
+}
+
+/* Seventh Section Styling */
+.seventh-box {
+    border-radius: 40px;
+    padding: 4rem;
+    min-height: 550px;
+}
+
+.seventh-box h2 {
+    font-size: 2.7rem;
+}
+
+.seventh-box p {
+    font-size: 1.6rem;
+}
+.final-section {
+    margin-bottom: 150px; /* You can adjust this value */
+}
+/* Footer Image */
+.footer-image {
+    display: block;
+    max-width: 1000px;
+    width: 100%;
+    margin: 50px auto;
+}
+
+/* Section Spacing */
+.section-spacing {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.footer-main {
+    background-color: #4e1dbb;
+    color: white;
+    border-top: 2px solid white;
+}
+
+.footer-left img {
+    width: 100px;
+}
+
+.footer-left .dropdown .btn {
+    background-color: white;
+    color: black;
+    font-weight: 500;
+}
+
+.footer-left .dropdown-menu {
+    min-width: 150px;
+}
+
+.footer-left .dropdown-menu .active {
+    font-weight: bold;
+}
+.footer-link {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #dcdcdc;
+}
+
+.footer-main {
+    background-color: #4e1dbb; /* Footer background color */
+}
+
+.footer-main h6 {
+    cursor: pointer;
+}
+.footer-image {
+    width: 100%;       /* Makes the image cover full width */
+    max-width: 1400px; /* Optional: limits maximum width */
+    height: auto;      /* Maintains aspect ratio */
+    display: block;
+    margin: 0 auto;    /* Centers the image */
+}
