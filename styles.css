@@ -64,7 +64,7 @@ body {
     padding: 10px;
     font-size: 0.9rem;
     max-height: 250px;
-    overflow-y: auto;
+   overflow: visible;
     z-index: 1050;
     box-shadow: 0 4px 8px rgba(10, 129, 204, 0.2);
 }
