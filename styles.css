@@ -49,7 +49,7 @@ body {
 }
 
 .hero-image img {
-    max-width: 120%;
+    max-width: 100%;
     height: auto;
     border: 3px solid white;
     border-radius: 15px;
@@ -205,6 +205,7 @@ body {
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
+    /* Hero Text */
     .hero-text h1 {
         font-size: 2.5rem;
     }
@@ -213,6 +214,7 @@ body {
         font-size: 1.2rem;
     }
 
+    /* Moving Line Items */
     .moving-item {
         font-size: 2rem;
     }
@@ -220,7 +222,13 @@ body {
     .moving-item img {
         width: 40px;
     }
+
+    /* Dropdown Menu (adjust size for mobile) */
+    .dropdown-menu {
+        width: 200px;
+    }
 }
+
 /* Sixth Section Styling */
 .sixth-box {
     background: linear-gradient(to right, #0b0521, #2b3aae); 
@@ -301,11 +309,6 @@ body {
 .footer-link:hover {
     color: #dcdcdc;
 }
-
-.footer-main {
-    background-color: #4e1dbb; /* Footer background color */
-}
-
 .footer-main h6 {
     cursor: pointer;
 }
