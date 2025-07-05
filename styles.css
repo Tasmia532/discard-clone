@@ -22,13 +22,13 @@ body {
 .navbar {
     background: transparent;
     width: 100%;
-    z-index: 1000;
-    position: relative; /* Keeps it in flow, but stable */
+    z-index: 1050;
+    position: relative;
 }
 
 .navbar-nav .nav-link {
     color: white;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .navbar-nav .nav-link:hover {
@@ -52,26 +52,26 @@ body {
 .hero-image img {
     max-width: 100%;
     height: auto;
-    border: 3px solid white;
+    border: 3px solid rgb(50, 13, 130);
     border-radius: 15px;
 }
 /* Dropdown Menu Styling */
 .dropdown-menu {
     position: absolute;
-    top: 100%;  /* Appear directly below the header item */
+    top: 100%; 
     left: 0;
-    width: 220px;  /* Compact box size */
+    width: 220px;  
     padding: 10px;
     font-size: 0.9rem;
     max-height: 250px;
     overflow-y: auto;
     z-index: 1050;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(10, 129, 204, 0.2);
 }
 
 /* Popup Image Styling (Inside the Box) */
 .popup-img {
-    max-width: 80px;  /* Smaller image */
+    max-width: 80px;  
     border-radius: 8px;
     margin-top: 10px;
     display: block;
@@ -81,12 +81,12 @@ body {
 
 .fixed-login {
     position: fixed;
-    top: 20px;   /* distance from top */
-    right: 40px; /* distance from right */
-    z-index: 1050; /* keep it above other elements */
+    top: 45px;   
+    right: 5px; 
+    z-index: 950; 
 }
 .login-button {
-    background-color: #007bff; /* Bootstrap blue */
+    background-color: #4b45ef; /* Bootstrap blue */
     color: white;
     padding: 10px 20px;
     border: none;
@@ -95,7 +95,7 @@ body {
 }
 
 .login-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #1a49d8; /* Darker blue on hover */
 }
 
 
