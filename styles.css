@@ -98,8 +98,6 @@ body {
     background-color: #1a49d8; /* Darker blue on hover */
 }
 
-
-
 /* CTA Buttons Styling */
 .cta-buttons {
     margin-top: 50px;
@@ -118,6 +116,7 @@ body {
 .download-btn {
     background-color: white;
     color: black;
+    size: 5px;
 }
 
 .download-btn:hover {
@@ -139,7 +138,7 @@ body {
 .fourth-box,
 .fifth-box {
     background-color: #5950a9;
-    border-radius: 40px;
+    border-radius: 30px;
     padding: 4rem;
     min-height: 550px;
 }
@@ -217,18 +216,17 @@ body {
     .hero-text h1 {
         font-size: 2.5rem;
     }
-
     .hero-text p {
         font-size: 1.2rem;
     }
 
     /* Moving Line Items */
     .moving-item {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .moving-item img {
-        width: 40px;
+        width: 50px;
     }
 
     /* Dropdown Menu (adjust size for mobile) */
@@ -268,7 +266,7 @@ body {
     font-size: 1.6rem;
 }
 .final-section {
-    margin-bottom: 150px; /* You can adjust this value */
+    margin-bottom: 150px; 
 }
 /* Footer Image */
 .footer-image {
@@ -291,6 +289,7 @@ body {
 
 .footer-left img {
     width: 100px;
+    size:5px;
 }
 
 .footer-left .dropdown .btn {
@@ -321,9 +320,9 @@ body {
     cursor: pointer;
 }
 .footer-image {
-    width: 100%;       /* Makes the image cover full width */
-    max-width: 1400px; /* Optional: limits maximum width */
-    height: auto;      /* Maintains aspect ratio */
+    width: 100%;      
+    max-width: 1400px; 
+    height: auto;      
     display: block;
-    margin: 0 auto;    /* Centers the image */
+    margin: 0 auto;   
 }
