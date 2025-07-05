@@ -23,6 +23,7 @@ body {
     background: transparent;
     width: 100%;
     z-index: 1000;
+    position: relative; /* Keeps it in flow, but stable */
 }
 
 .navbar-nav .nav-link {
@@ -54,21 +55,28 @@ body {
     border: 3px solid white;
     border-radius: 15px;
 }
-/* Adjust the size of the dropdown menu */
+/* Dropdown Menu Styling */
 .dropdown-menu {
-    width: 250px;  /* Control width */
-    max-height: 300px;  /* Optional: control height if too long */
-    overflow-y: auto;   /* Scroll if content is too much */
-    padding: 15px;
-    font-size: 0.9rem;  /* Smaller text */
+    position: absolute;
+    top: 100%;  /* Appear directly below the header item */
+    left: 0;
+    width: 220px;  /* Compact box size */
+    padding: 10px;
+    font-size: 0.9rem;
+    max-height: 250px;
+    overflow-y: auto;
+    z-index: 1050;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* Adjust popup image size */
+/* Popup Image Styling (Inside the Box) */
 .popup-img {
-    width: 100%;
-    max-width: 200px;  /* Smaller image */
+    max-width: 80px;  /* Smaller image */
+    border-radius: 8px;
     margin-top: 10px;
-    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .fixed-login {
